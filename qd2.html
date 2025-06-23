@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人信息表单</title>
+    <style>
+        form {
+            width: 300px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"], select, input[type="checkbox"] {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+        }
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+        button {
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="avatar">头像</label>
+        <input type="file" id="avatar">
+
+        <label for="nickname">昵称</label>
+        <input type="text" id="nickname">
+        <label for="education">学历</label>
+        <select id="education">
+            <option value="大专">大专</option>
+            <option value="本科">本科</option>
+        </select>
+        <label for="gender">性别</label>
+        <input type="radio" id="male" name="gender" value="男" checked>
+        <label for="male">男</label>
+        <input type="radio" id="female" name="gender" value="女">
+        <label for="female">女</label>
+        <label for="hobbies">爱好</label>
+        <input type="checkbox" id="movie" value="电影">
+        <label for="movie">电影</label>
+        <input type="checkbox" id="photography" value="摄影">
+        <label for="photography">摄影</label>
+        <input type="checkbox" id="music" value="音乐">
+        <label for="music">音乐</label>
+        <input type="checkbox" id="reading" value="阅读">
+        <label for="reading">阅读</label>
+        <label for="signature">签名</label>
+        <input type="text" id="signature">
+        <button type="submit">保存</button>
+    </form>
+</body>
+</html>
