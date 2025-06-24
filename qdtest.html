@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/submit" method="post">
+        <label for="name">姓名：</label>
+        <input type="text" id="name" name="username" required />
+        <label for="email">邮箱：</label>
+        <input type="email" id="email" name="email" />
+        <label for="gender">性别：</label>
+            <select id="gender" name="gender">
+            <option value="male">男</option>
+            <option value="female">⼥</option>
+            </select>
+        <button type="submit">提交</button>
+    </form>
+</body>
+</html>
