@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+.container {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    background-color: #808080;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.sector {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #FFD700;
+    border-radius: 0 0 100px 0;
+}
+.sector-top-left {
+    top: 0;
+    left: 0;
+    
+}
+.sector-bottom-right {
+    bottom: 0;
+    right: 0;
+    transform: rotate(180deg);
+}
